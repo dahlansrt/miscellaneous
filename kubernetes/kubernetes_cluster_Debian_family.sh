@@ -12,7 +12,7 @@
 # scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
 
 
-# A. Install Docker & Kubernetes on all nodes
+# A. Install Docker on all three nodes
 
 # 1. Add the Docker GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -96,17 +96,3 @@ systemctl status docker
 # 3. Verify status
 #  kubectl get nodes
 # All three nodes should be in the Ready state
-
-# MASTER Node: CREATE AND SCALE A DEPLOYMENT USING kubectl
-
-# 1. Create a simple deployment
-# kubectl create deployment nginx --image=nginx
-
-# 2. Inspect the pod
-# kubectl get pods
-
-# 3. Scale the deployment
-# kubectl scale deployment nginx --replicas=4
-
-# 4. Inspect the pods. Should have 4
-# kubectl get pods
