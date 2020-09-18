@@ -12,7 +12,7 @@
 # scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
 
 
-# A. Install Docker on all three nodes
+# A. Install Docker & Kubernetes on all nodes
 
 # 1. Add the Docker GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
